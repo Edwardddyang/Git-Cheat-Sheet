@@ -43,3 +43,5 @@ To go back to a past commit:
 
 git log <name> //Shows every commit in current branch (q to exit)
 git log --oneline //Shows just the minihash and the message 
+git checkout <minihash> //Goes back to the commit of that minihash (git checkout master/main to go back to main)
+git diff <minihash1> <minihash> //Shows the difference in the files of the two different commits 
