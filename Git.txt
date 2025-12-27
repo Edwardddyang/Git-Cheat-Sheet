@@ -38,3 +38,8 @@ Branching:
 git branch <name> //Creates new branch 
 git checkout <name> //Goes to the branch 
 git merge <name> -m "comment" //Merges the changes in name into current directory 
+
+To go back to a past commit: 
+
+git log <name> //Shows every commit in current branch (q to exit)
+git log --oneline //Shows just the minihash and the message 
