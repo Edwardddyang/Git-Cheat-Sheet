@@ -32,5 +32,7 @@ git reset HEAD~ //This undoes the most recent commit and goes back to the last o
 git log //Displays entire commit history 
 
 Branching: 
+  - When makes changes to a branch, you have to commit the changes for other branches to not have the changes 
 
- fefefe
+git branch <name> //Creates new branch 
+git checkout <name> //Goes to the branch 
