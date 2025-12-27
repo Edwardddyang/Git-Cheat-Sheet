@@ -2,7 +2,7 @@ Workflow of git:
 
 1. Working directory (actually coding)
 2. Staging (Changes are ready)
-3. Commit to local repository (Files sit in between working director and repository save)
+3. Commit to local repository 
 
 Step 1 begin: 
 
@@ -19,10 +19,6 @@ Step 2 staging files:
 
 git add . //Stages the changes in the current director
 git add --all //Stages changes in the entire git repository 
-git reset //Undoes changes by moving the repository's timeline backwards to a past commit 
-  -git reset --soft //Moves commit history back, but keeps changes staged 
-  -git reset --mixed //Default, Moves commit history back and unstages any changes 
-  -git reset --hard //Moves to last commit history and deletes all changes, effectively hits "Undo" on all your typing since you last ran git commit
 
 Step 3 commit:
 
@@ -30,6 +26,13 @@ git commit -m "Message"
 git reset HEAD~ //This undoes the most recent commit and goes back to the last one, does not
                   delete anything (Safe) 
 git log //Displays entire commit history 
+
+git reset //Undoes changes by moving the repository's timeline backwards to a past commit 
+  -git reset --soft //Moves commit history back, but keeps changes staged 
+  -git reset --mixed //Default, Moves commit history back and unstages any changes 
+  -git reset --hard //Moves to last commit history and deletes all changes, effectively hits "Undo" on all your typing since you last ran git commit
+
+git revert <minihash> //Creates a new commit which reverts back to what commit of minihash, difference from reset is that it creates a new commit rather than go back to a previous one 
 
 Branching: 
   - When makes changes to a branch, you have to commit the changes for other branches to not have the changes 
@@ -68,3 +71,5 @@ git fetch //Brings remote changes into local repository but no merging
   - Need to run git merge to see the changes in your local directory 
 
 git pull //Trys to merge your working directory with the Github
+
+Pull Request - A request to merge a branch into the main 
