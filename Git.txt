@@ -24,3 +24,13 @@ git reset //Undoes changes by moving the repository's timeline backwards to a pa
   -git reset --mixed //Default, Moves commit history back and unstages any changes 
   -git reset --hard //Moves commit history back and deletes all changes  
 
+Step 3 commit:
+
+git commit -m "Message" 
+git reset HEAD~ //This undoes the most recent commit and goes back to the last one, does not
+                  delete anything (Safe) 
+git log //Displays entire commit history 
+
+Branching: 
+
+ fefefe
