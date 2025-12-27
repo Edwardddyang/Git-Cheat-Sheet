@@ -63,9 +63,11 @@ git stash list //Shows all your past stashs
 
 With Github: 
 
+git remote add origin <HTTPS> //To initialize 
+
 git push //Sends local changes to Github 
   - git push origin <branchname> 
-  - git push -u origin <branchname> //Makes it so for that branch, you only need to do "git push" 
+  - git push -u origin <branchname> //Makes it so for that branch, you only need to do "git push" (The first time)
 
 git fetch //Brings remote changes into local repository but no merging 
   - Need to run git merge to see the changes in your local directory 
