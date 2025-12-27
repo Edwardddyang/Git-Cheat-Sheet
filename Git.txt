@@ -22,7 +22,7 @@ git add --all //Stages changes in the entire git repository
 git reset //Undoes changes by moving the repository's timeline backwards to a past commit 
   -git reset --soft //Moves commit history back, but keeps changes staged 
   -git reset --mixed //Default, Moves commit history back and unstages any changes 
-  -git reset --hard //Moves commit history back and deletes all changes  
+  -git reset --hard //Moves to last commit history and deletes all changes, effectively hits "Undo" on all your typing since you last ran git commit
 
 Step 3 commit:
 
@@ -47,6 +47,16 @@ git log <name> //Shows every commit in current branch (q to exit)
 git log --oneline //Shows just the minihash and the message 
 git checkout <minihash> //Goes back to the commit of that minihash (git checkout master/main to go back to main)
 git diff <minihash1> <minihash> //Shows the difference in the files of the two different commits 
+
+git restore <filename> //Restores the file back to its previous commit 
+git restore . //Restores every file back to its previous commit 
+
+git stash //Allows you to change branches without committing your current branch 
+  - git stash pop //Brings the change to the branch you are in, and deletes the stash in the list 
+  - git stash apply //Brings the changes to the branch you are in, and keeps the stash in the list 
+  - git stash drop //Deletes the newest stash
+  - git stash drop stash@{0} //Deletes stash at certain index 
+git stash list //Shows all your past stashs 
 
 With Github: 
 
