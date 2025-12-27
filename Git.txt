@@ -1,0 +1,26 @@
+Workflow of git: 
+
+1. Working directory (actually coding)
+2. Staging (Changes are ready)
+3. Commit to local repository (Files sit in between working director and repository save)
+
+Step 1 begin: 
+
+To start off: 
+git init - Create git repository 
+
+To copy a repository on local machine from Github: 
+git clone HTTPS
+
+To see which files have been modified compared to the last commit: 
+git status 
+
+Step 2 staging files: 
+
+git add . //Stages the changes in the current director
+git add --all //Stages changes in the entire git repository 
+git reset //Undoes changes by moving the repository's timeline backwards to a past commit 
+  -git reset --soft //Moves commit history back, but keeps changes staged 
+  -git reset --mixed //Default, Moves commit history back and unstages any changes 
+  -git reset --hard //Moves commit history back and deletes all changes  
+
