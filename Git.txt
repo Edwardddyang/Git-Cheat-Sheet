@@ -36,6 +36,8 @@ Branching:
   - Merge conflict: When the same part of the same file is modified differently in different branches
 
 git branch <name> //Creates new branch 
+git branch -d <name> //Deletes a branch 
+git branch -D <name> //Force deletes a branch 
 git checkout <name> //Goes to the branch 
 git merge <name> -m "comment" //Merges the changes in name into current directory 
 
@@ -45,3 +47,14 @@ git log <name> //Shows every commit in current branch (q to exit)
 git log --oneline //Shows just the minihash and the message 
 git checkout <minihash> //Goes back to the commit of that minihash (git checkout master/main to go back to main)
 git diff <minihash1> <minihash> //Shows the difference in the files of the two different commits 
+
+With Github: 
+
+git push //Sends local changes to Github 
+  - git push origin <branchname> 
+  - git push -u origin <branchname> //Makes it so for that branch, you only need to do "git push" 
+
+git fetch //Brings remote changes into local repository but no merging 
+  - Need to run git merge to see the changes in your local directory 
+
+git pull //Trys to merge your working directory with the Github
